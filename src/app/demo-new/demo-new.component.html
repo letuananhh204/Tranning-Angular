@@ -1,0 +1,12 @@
+<input id="num1" (change)="number1($event)"/>
+<select (change)="getOperator($event)" matNativeControl required>
+  <option></option>
+  <option value="add">+</option>
+  <option value="sub">-</option>
+  <option value="mul">*</option>
+  <option value="div">/</option>
+</select>
+<input id="numb2" (change)="number2($event)"/>
+<button (click)="caculate()" id="convert">Caculate</button>
+<br>
+<span> {{result}} </span>
